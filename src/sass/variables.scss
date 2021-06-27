@@ -28,5 +28,19 @@ $headings: (
   ),
 
 );
+$btn-letter-spacing: 0;
+$btn-font-weight: 18;
+$btn-border-radius: 12px;
+$btn-sizes: (
+  'default': 32,
+  'large': 56,
+  'small': 32
+);
+
+$rounded: (
+  'sm': 6px,
+  'md': 12px,
+  'lg': 50px
+);
 
 @import '~vuetify/src/styles/styles.sass';
