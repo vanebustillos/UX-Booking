@@ -1,4 +1,4 @@
-
+//Typography
 $body-font-family: 'Montserrat';
 $heading-font-family: 'Montserrat';
 $headings: (
@@ -28,6 +28,8 @@ $headings: (
   ),
 
 );
+
+//Buttons
 $btn-letter-spacing: 0;
 $btn-font-weight: 18;
 $btn-border-radius: 12px;
@@ -37,10 +39,22 @@ $btn-sizes: (
   'small': 32
 );
 
+//Border-radius
 $rounded: (
   'sm': 6px,
   'md': 12px,
   'lg': 50px
 );
+
+//Inputs
+$input-font-size: 16px;
+$input-letter-spacing: 0;
+$input-text-align: left;
+$input-max-height: 32px;
+
+
+//Expansiong panel
+$expansion-panel-border-radius: 10px;
+
 
 @import '~vuetify/src/styles/styles.sass';
