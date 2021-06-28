@@ -1,16 +1,20 @@
 <template>
-  <div>
-  <hello-world />
-  </div>
+<v-container>
+  <home-search-bar />
+  <hospedaje-seacrh-bar />
+</v-container>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+import HomeSearchBar from '../components/HomeSearchBar.vue';
+import HospedajeSeacrhBar from '../components/HospedajeSearchBar.vue'
+
 export default {
   name: "Home",
 
   components: {
-    HelloWorld,
+    HomeSearchBar,
+    HospedajeSeacrhBar
   },
 };
 </script>
