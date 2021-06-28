@@ -1,13 +1,13 @@
 <template>
-  <v-container class="primary lighten-3 rounded-lg px-6 py-4">
+  <v-container class="primary lighten-3 rounded-lg py-4">
     <v-row>
-      <v-col class="pr-6" cols="12" sm="3"> 
+      <v-col class="ml-6" cols="auto" sm="3"> 
         <v-text-field class="ink--text text--darken-4 caption"
             label="Área del Mapa"
             prepend-icon="mdi-map-marker"
         ></v-text-field>
       </v-col>
-      <v-col class="px-6" cols="12" sm="3">
+      <v-col cols="auto" sm="3">
         <v-menu
           v-model="dateMenu"
           :close-on-content-click="false"
@@ -31,13 +31,13 @@
           <v-date-picker range locale="en-in" v-model="dates" no-title @input="dateMenu = false"></v-date-picker>
         </v-menu>
       </v-col>
-     <v-col class="px-6" cols="12" sm="3">
+     <v-col cols="auto" sm="3">
          <v-select
           :items="items"
           label="Huéspedes"
         ></v-select>
       </v-col>
-      <v-col class="pl-6">
+      <v-col class="pl-6 pr-6 mr-0" cols="auto">
         <v-btn class="mx-2 primary darken-2 white--text"
           fab
           large
@@ -51,6 +51,13 @@
         
   </v-container>
 </template>
+
+<style>
+  .container {
+    width: 616px;
+    height: 96px;
+  }
+</style>
 
 <script>
 export default {
