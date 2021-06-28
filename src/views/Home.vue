@@ -8,6 +8,7 @@
 <script>
 import HomeSearchBar from '../components/HomeSearchBar.vue';
 import HospedajeSeacrhBar from '../components/HospedajeSearchBar.vue'
+
 export default {
   name: "Home",
 
