@@ -1,5 +1,5 @@
 <template>
-  <v-container>hiii</v-container>
+  <v-container></v-container>
 </template>
 <script>
 export default {
