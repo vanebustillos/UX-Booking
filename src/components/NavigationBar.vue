@@ -83,11 +83,6 @@ export default {
     padding: 0% !important;
 }
 
-div .text-subtitle-1 {
-  color: #fcfcfc;
-  text-transform: none;
-}
-
 .rows {
     margin: 0% !important;
 }
@@ -97,6 +92,8 @@ div .text-subtitle-1 {
 }
 
 .title {
+    color: #fcfcfc;
+    text-transform: none;
     margin-top: 62px;
     margin-left: 96px;
 }

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import LoyaltyPage from "../views/LoyaltyProgram.vue"
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/LoyaltyProgram",
+    name: "LoyaltyPage",
+    component: LoyaltyPage,
   },
   {
     path: "/about",
