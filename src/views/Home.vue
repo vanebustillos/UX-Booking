@@ -9,7 +9,7 @@
 <script>
 import HomeSearchBar from "../components/HomeSearchBar.vue";
 import HospedajeSeacrhBar from "../components/HospedajeSearchBar.vue";
-import NavBar from "../components/NavBar.vue";
+import NavBar from "../components/NavigationBar.vue";
 
 export default {
   name: "Home",
