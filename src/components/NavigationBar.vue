@@ -1,6 +1,6 @@
 <template>
     <v-app-bar
-        class="navbar pa-0"
+        class="navbar"
         app
         flat
         color="primary darken-2"
@@ -75,12 +75,12 @@ export default {
 <style>
 .toolbar-content {
     min-width: 1440px;
-    height: 160px;
-    padding: 0%;
+    height: 160px !important;
+    padding: 0% !important;
 }
 
 .v-toolbar__content {
-  padding: 0% !important;
+    padding: 0% !important;
 }
 
 div .text-subtitle-1 {
@@ -115,6 +115,7 @@ div .text-subtitle-1 {
 .profile-button {
   margin-left: 42px;
   margin-top: 52px;
+  margin-right: 72px;
 }
 
 </style>
