@@ -4,7 +4,6 @@
     app
     flat
     color="primary darken-2"
-    width="1440"
     height="160"
   >
     <div class="text-subtitle-1">

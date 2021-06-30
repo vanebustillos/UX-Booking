@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pa-0 ma-0 footer-container">
     <v-footer absolute padless>
       <v-card flat tile width="100%" class="ink text-center">
         <v-row justify="center mx-16 my-4">
@@ -82,3 +82,10 @@ export default {
   computed: {},
 };
 </script>
+<style scoped>
+.footer-container {
+  max-width: 100%;
+  width: 100%;
+  height: 222px;
+}
+</style>

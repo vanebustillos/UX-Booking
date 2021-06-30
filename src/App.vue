@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <nav-bar />
+      <Nav-bar />
       <router-view />
       <Footer />
     </v-main>
@@ -17,3 +17,9 @@ export default {
   name: "App",
 };
 </script>
+<style scoped>
+.v-main {
+  margin-left: calc((100% - 1440px) / 2);
+  margin-right: calc((100% - 1440px) / 2);
+}
+</style>
