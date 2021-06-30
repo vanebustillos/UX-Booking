@@ -1,6 +1,6 @@
 <template>
     <v-container class="lp-content">
-        <v-row class="row1">
+        <v-row class="lprow1">
             <v-col class="column">
                 <v-img
                     class="image1"
@@ -18,7 +18,7 @@
                 </div>
             </v-col>
         </v-row>
-        <v-row class="row2">
+        <v-row class="lprow2">
             <v-col class="column">
                 <div class="text-h2 header2">
                     Canjea tus puntos
@@ -41,8 +41,107 @@
                     Reclama tus recompensas
                 </div>
             </v-col>
-            <v-col>
-                <small-card />
+            <v-col class="first-card card-column">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+            <v-col class="card-column">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+            <v-col class="last-card card-column">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+            <v-col class="first-card card-column row2-cards">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+            <v-col class="card-column row2-cards">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+            <v-col class="last-card card-column row2-cards">
+                <small-card title="Maison Fiori" subtitle="A 0,2 km del centro" img="https://picsum.photos/200" stars="3"/>
+            </v-col>
+        </v-row>
+        <v-row class="lprow3">
+            <v-col class="column">
+                <div class="text-h2 title-exp">
+                    Experiencias
+                </div>
+            </v-col>
+        </v-row>
+        <v-row class="lprow4">
+            <v-col class="column">
+                <div class="text-body-1 experiencia-body mt-12" >
+                    Disfruta un Viaje Virtual a Sevilla, España y aprende los Códigos de Cultura Flamenca en una Clase de Baile con Eva de Triana, 
+                    una Artista Sevillana Experta en Principiantes. 3.530 invitados/principiantes a mi estudio sevillano en 2019/20. 
+                    Más de 500 invitados virtuales desde abril 2020. 
+                </div>
+                <br />
+                <div class="text-body-1 experiencia-body">
+                    Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook y Youtube
+                </div>
+                <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+                    Conocer Mas
+                </v-btn>
+
+            </v-col>
+            <v-col class="column">
+                <v-img
+                    class="image2"
+                    height="456"
+                    width="612"
+                    style="margin-left: 24px"
+                    src="https://photobest1.com/wp-content/uploads/2018/12/beautiful-china-wallpaper-hd-10.jpg"
+                />
+            </v-col>
+        </v-row>
+        <v-row class="lprow5">
+            <v-col class="column">
+                <v-img
+                    class="image2"
+                    height="456"
+                    width="612"
+                    style="margin: 96px 24px 0px 0px"
+                    src="https://www.nationalgeographic.com/content/dam/expeditions/destinations/polar/ocean/Journey-to-Antarctica/journey-antarctica-og.ngsversion.1545337658456.adapt.1900.1.jpg"
+                />
+            </v-col>
+            <v-col class="column">
+                <div class="text-body-1 experiencia-body" style="margin-top: 96px" >
+                    Disfruta un Viaje Virtual a Sevilla, España y aprende los Códigos de Cultura Flamenca en una 
+                    Clase de Baile con Eva de Triana, una Artista Sevillana Experta en Principiantes. 3.530 
+                    invitados/principiantes a mi estudio sevillano en 2019/20. Más de 500 invitados virtuales 
+                    desde abril 2020.
+                </div>
+                <br />
+                <div class="text-body-1 experiencia-body">
+                    Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook y Youtube
+                </div>
+                <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+                    Conocer Mas
+                </v-btn>
+
+            </v-col>
+            <v-col class="column">
+                <div class="text-body-1 experiencia-body" style="margin-top: 96px" >
+                    Disfruta un Viaje Virtual a Sevilla, España y aprende los Códigos de Cultura Flamenca en una Clase de Baile con Eva de Triana, 
+                    una Artista Sevillana Experta en Principiantes. 3.530 invitados/principiantes a mi estudio sevillano en 2019/20. 
+                    Más de 500 invitados virtuales desde abril 2020. 
+                </div>
+                <br />
+                <div class="text-body-1 experiencia-body">
+                    Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook y Youtube
+                </div>
+                <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+                    Conocer Mas
+                </v-btn>
+
+            </v-col>
+            <v-col class="column">
+                <v-img
+                    class="image2"
+                    height="456"
+                    width="612"
+                    style="margin: 96px 96px 0px 24px"
+                    src="https://mythsandmountains.com/wp-content/uploads/2018/09/myths-and-mountains-intro-slide3-1.jpg"
+                />
             </v-col>
         </v-row>
     </v-container>
@@ -51,9 +150,8 @@
 <script>
 import SmallCard from "../components/SmallCard.vue";
 export default {
-  components: { SmallCard },
-    setup() {
-        
+    components: { 
+      SmallCard 
     },
 }
 </script>
@@ -87,10 +185,10 @@ export default {
     margin-top: 24px;
 }
 
-.row2 {
-    /* background: url("../assets/LP-images/BGimage1.jpg") no-repeat center center;
-    position: absolute;
-    object-fit: cover; */
+.lprow2 {
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.7), rgba(245, 246, 252, 0.7)), url("../assets/LP-images/BGimage1.jpg") no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
     margin-top: 72px;
 }
 
@@ -105,9 +203,7 @@ export default {
     text-align: center;
     width: 612px;
     height: 308px;
-    margin-left: 24px;
-    margin-top: 160px;
-    margin-right: 96px;
+    margin: 160px 96px 0px 24px;
 }
 .image2 {
     margin-left: 96px;
@@ -117,6 +213,42 @@ export default {
 .subheader1{
     width: 428px;
     height: 32px;
-    margin: 48px 916px 48px 96px;
+    margin: 48px 916px 0px 96px;
+}
+
+.first-card{
+    margin-left: 96px;
+}
+.card-column{
+    width: 400px !important;
+    height: 104px;
+    padding: 0%;
+    flex-grow: 0;
+    margin-right: 24px;
+    margin-top: 48px;
+}
+
+.last-card{
+    margin-right: 96px;
+}
+
+.row2-cards {
+    margin-bottom: 72px;
+}
+
+.title-exp {
+    width: 332px;
+    height: 40px;
+    margin: 72px 0px 0px 96px;
+    font-weight: 700;
+}
+
+.experiencia-body {
+    width: 612px;
+}
+.btn-conocer-mas{
+    text-transform: none;
+    color: #00A7C7;
+    margin-left: 212px;
 }
 </style>
