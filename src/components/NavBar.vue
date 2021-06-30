@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-    class="navbar"
-    app
-    flat
-    color="primary darken-2"
-    height="160"
-  >
+  <v-app-bar class="navbar" app flat color="primary darken-2" height="160">
     <div class="text-subtitle-1">
       <span class="nav-title"> HOTELES.COM </span>
     </div>

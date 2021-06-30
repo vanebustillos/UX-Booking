@@ -521,7 +521,6 @@ export default {
 }
 .thing-to-do-container .v-expansion-panel {
   height: 56px;
-
 }
 .thing-to-do-container .v-divider {
   width: 1248px;
