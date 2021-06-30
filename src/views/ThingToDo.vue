@@ -1,24 +1,26 @@
 <template>
-  <v-container class="mx-0 px-0">
-    <v-row align="center" class="ma-0 pa-0 mb-8" justify="center">
-      <v-col class="pa-0 mx-16 px-8">
-        <v-card max-width="1248" class="ma-0 car">
-          <v-carousel
-            class="my-14"
-            height="616"
-            show-arrows
-            hide-delimiters
-            cycle
-          >
-            <v-carousel-item
-              v-for="i in items"
-              :key="i.id"
-              :src="i.src"
-            ></v-carousel-item>
-          </v-carousel>
-        </v-card>
-      </v-col>
-    </v-row>
+  <div class="ma-0 pa-0 thing-to-do-container">
+    <v-container class="background ma-0 pa-0">
+      <v-row align="center" class="ma-0 pa-0 mb-8" justify="center">
+        <v-col class="pa-0 mx-16 px-8">
+          <v-card max-width="1248" class="mt-0 car">
+            <v-carousel
+              class="my-14"
+              height="616"
+              show-arrows
+              hide-delimiters
+              cycle
+            >
+              <v-carousel-item
+                v-for="i in items"
+                :key="i.id"
+                :src="i.src"
+              ></v-carousel-item>
+            </v-carousel>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
     <v-card flat tile class="ma-0 pa-0">
       <v-card-title
         class="
@@ -48,23 +50,14 @@
           <v-select class="select" label="Solo field" dense solo></v-select>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="auto" class="ma-0 mr-auto">
+      <v-row class="ma-0 mb-6">
+        <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Recomendados para ti</label
           >
         </v-col>
-        <v-col cols="auto" class="mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -72,7 +65,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-3">
+      <v-row class="ma-0 ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="r in recommended"
@@ -86,23 +79,14 @@
       <v-row class="ma-0 pa-0 px-8 my-10">
         <v-divider class="primary darken-3 ma-0 mx-16"></v-divider>
       </v-row>
-      <v-row>
+      <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Popular del momento</label
           >
         </v-col>
-        <v-col cols="auto" class="mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -110,7 +94,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-3">
+      <v-row class="ma-0 ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="p in popular"
@@ -124,23 +108,14 @@
       <v-row class="ma-0 pa-0 px-8 my-10">
         <v-divider class="primary darken-3 ma-0 mx-16"></v-divider>
       </v-row>
-      <v-row>
+      <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
-            >Cerca de tuyo</label
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            >Cerca tuyo</label
           >
         </v-col>
-        <v-col cols="auto" class="mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -148,7 +123,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ml-16 pl-3">
+      <v-row class="ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="c in close"
@@ -189,23 +164,14 @@
           <v-select class="select" label="Solo field" dense solo></v-select>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Recomendados para ti</label
           >
         </v-col>
-        <v-col cols="auto" class="ma-0 mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -213,7 +179,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-3">
+      <v-row class="ma-0 ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="r in recommended"
@@ -227,23 +193,14 @@
       <v-row class="ma-0 pa-0 px-8 my-10">
         <v-divider class="primary darken-3 ma-0 mx-16"></v-divider>
       </v-row>
-      <v-row class="">
+      <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Popular del momento</label
           >
         </v-col>
-        <v-col cols="auto" class="mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -251,7 +208,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-3">
+      <v-row class="ma-0 ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="p in popular"
@@ -265,23 +222,14 @@
       <v-row class="ma-0 pa-0 px-8 my-10">
         <v-divider class="primary darken-3 ma-0 mx-16"></v-divider>
       </v-row>
-      <v-row>
+      <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="
-              pa-0
-              pl-8
-              ml-16
-              mt-5
-              mb-6
-              subtitle-1
-              ink--text
-              text--darken-4
-            "
-            >Cerca de tuyo</label
+            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            >Cerca tuyo</label
           >
         </v-col>
-        <v-col cols="auto" class="mr-16"
+        <v-col cols="auto" class=" mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -289,7 +237,7 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ml-16 pl-3">
+      <v-row class="ml-16 pl-5">
         <Information-card
           class="ma-0 mp-0 mx-3"
           v-for="c in close"
@@ -324,7 +272,9 @@
       <div class="pa-0 mt-5 mx-16 px-8 questions" max-width="1440">
         <v-expansion-panels>
           <v-expansion-panel class="ma-2" v-for="(item, i) in 8" :key="i">
-            <v-expansion-panel-header> Item </v-expansion-panel-header>
+            <v-expansion-panel-header>
+              Nonne audire tibi semper in extrema tardantur condicione
+            </v-expansion-panel-header>
             <v-expansion-panel-content>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -335,7 +285,7 @@
         </v-expansion-panels>
       </div>
     </v-card>
-  </v-container>
+  </div>
 </template>
 <script>
 import image1 from "@/assets/images/carousel1.jpeg";
@@ -475,36 +425,41 @@ export default {
 };
 </script>
 <style>
-.row {
-  width: 1440px !important;
+.thing-to-do-container {
+  max-width: 100%;
+  width: 100%;
 }
-.s {
-  border-color: crimson;
+.thing-to-do-container .row {
+  width: 100% !important;
 }
-.select {
+.thing-to-do-container .select {
   width: 294px;
   height: 56px;
 }
-.v-application .transparent {
-  border: 1;
-}
+
 .background {
-  background-image: url("../assets/images/background.png");
-  width: 1445px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../assets/images/background.png");
+  width: 100%;
   height: 728px;
-}
-.container {
-  width: 1440px;
-  padding: 0px;
+  max-width: 100%;
 }
 .questions {
   width: 1312px;
+  margin-bottom: 0px;
 }
-.v-expansion-panels {
+.thing-to-do-container .v-expansion-panels {
   max-width: 1312px;
 }
-.v-divider {
+.thing-to-do-container .v-divider {
   width: 1248px;
   max-width: 1248px;
+}
+
+.footer {
+  margin-bottom: 240px;
 }
 </style>
