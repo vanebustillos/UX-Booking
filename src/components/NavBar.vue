@@ -81,4 +81,10 @@ div .text-subtitle-1 {
 .icon1 {
   margin-right: 16px;
 }
+.a {
+  width: 100%;
+  max-width: 100%;
+  margin-left: calc((100% - 1440px) / 2);
+  margin-right: calc((100% - 1440px) / 2);
+}
 </style>
