@@ -38,16 +38,44 @@
       >
       <v-row row="auto" class="ma-0 mx-16 px-5" align="center">
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
       </v-row>
       <v-row class="ma-0 mb-6">
@@ -57,7 +85,7 @@
             >Recomendados para ti</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -86,7 +114,7 @@
             >Popular del momento</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -115,7 +143,7 @@
             >Cerca tuyo</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -152,16 +180,44 @@
       >
       <v-row row="auto" class="ma-0 mx-16 px-5" align="center">
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
         <v-col cols="auto">
-          <v-select class="select" label="Solo field" dense solo></v-select>
+          <v-select
+            dense
+            outlined
+            height="56px"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
         </v-col>
       </v-row>
       <v-row class="ma-0 mb-6">
@@ -171,7 +227,7 @@
             >Recomendados para ti</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -200,7 +256,7 @@
             >Popular del momento</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -229,7 +285,7 @@
             >Cerca tuyo</label
           >
         </v-col>
-        <v-col cols="auto" class=" mr-16 pr-8"
+        <v-col cols="auto" class="mr-16 pr-8"
           ><v-btn
             class="ink--text text--lighten-5 caption"
             color="primary darken-1"
@@ -269,9 +325,18 @@
         "
         >Preguntas Frecuentes</v-card-title
       >
-      <div class="pa-0 mt-5 mx-16 px-8 questions" max-width="1440">
+      <div class="pa-0 my-5 mx-16 px-8 questions" max-width="1440">
         <v-expansion-panels>
-          <v-expansion-panel class="ma-2" v-for="(item, i) in 8" :key="i">
+          <v-expansion-panel
+            dense
+            outlined
+            height="56px"
+            :items="price"
+            color="primary darken-2"
+            class="ma-2 mt-2 mb-3"
+            v-for="(item, i) in 8"
+            :key="i"
+          >
             <v-expansion-panel-header>
               Nonne audire tibi semper in extrema tardantur condicione
             </v-expansion-panel-header>
@@ -432,7 +497,7 @@ export default {
 .thing-to-do-container .row {
   width: 100% !important;
 }
-.thing-to-do-container .select {
+.thing-to-do-container .v-select {
   width: 294px;
   height: 56px;
 }
@@ -442,7 +507,7 @@ export default {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../assets/images/background.png");
+    url("../assets/images/background1.png");
   width: 100%;
   height: 728px;
   max-width: 100%;
@@ -453,6 +518,10 @@ export default {
 }
 .thing-to-do-container .v-expansion-panels {
   max-width: 1312px;
+}
+.thing-to-do-container .v-expansion-panel {
+  height: 56px;
+
 }
 .thing-to-do-container .v-divider {
   width: 1248px;
