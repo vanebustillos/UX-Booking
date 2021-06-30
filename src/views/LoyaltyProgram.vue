@@ -144,15 +144,97 @@
                 />
             </v-col>
         </v-row>
+        <v-row>
+            <v-btn class="btn-carga primary darken-4">
+                Carga mas
+            </v-btn>
+        </v-row>
+        <v-row class="lprow6">
+            <v-col class="column">
+                <div class="text-body-2" style="margin-bottom: 64px">
+                    Vive tus propias experiencias
+                </div>
+            </v-col>
+        </v-row>
+        <v-row class="lprow7">
+            <v-col class="column">
+                <information-card title="Maison Fiori" location="A 0,5 km del centro" img="https://picsum.photos/200" subtitle="Situado en Cochabamba, a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."/>
+            </v-col>
+            <v-col class="column">
+                <information-card title="Maison Fiori" location="A 0,5 km del centro" img="https://picsum.photos/200" subtitle="Situado en Cochabamba, a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."/>
+            </v-col>
+            <v-col class="column">
+                <information-card title="Maison Fiori" location="A 0,5 km del centro" img="https://picsum.photos/200" subtitle="Situado en Cochabamba, a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."/>
+            </v-col>
+            <v-col class="column">
+                <information-card title="Maison Fiori" location="A 0,5 km del centro" img="https://picsum.photos/200" subtitle="Situado en Cochabamba, a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."/>
+            </v-col>
+        </v-row>
+        <v-row class="lprow8">
+            <v-col class="column">
+                <div class="text-h2 title-preguntas">
+                    Preguntas Frecuentes
+                </div>
+            </v-col>
+        </v-row>
+        <v-row class="lprow9">
+            <v-col class="column">
+                <v-expansion-panels
+                    v-model="panel"
+                    :readonly="readonly"
+                    multiple
+                >
+                <v-expansion-panel v-for="item in preguntas" :key="item.title">
+                    <v-expansion-panel-header class="panel-header">
+                        {{ item.title }}
+                        <template v-slot:actions>
+                            <v-icon color="primary darken-3">
+                            $expand
+                            </v-icon>
+                        </template>
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content>
+                            Some content
+                        </v-expansion-panel-content>
+                     </v-expansion-panel>
+                </v-expansion-panels>
+            </v-col>
+        </v-row>
+        <v-row class="lprow10">
+            <v-col>
+                <!-- <Footer /> -->
+            </v-col>
+        </v-row>
     </v-container>
+    
 </template>
 
 <script>
 import SmallCard from "../components/SmallCard.vue";
+import InformationCard from "../components/InformationCard.vue";
+//import Footer from "..//components/Footer.vue"
+
 export default {
     components: { 
-      SmallCard 
+      SmallCard,
+      InformationCard,
+     //Footer,
     },
+
+    data() {
+        return {
+            preguntas: [
+                {title: 'Nonne audire tibi semper in extrema tardantur condicione'},
+                {title: 'Plagueis Sapientium Nec cogitavi. Est fabulam Jedi ut non dicam tibi.'},
+                {title: 'Suussa legend Plagueis erat Tenebrosi Domini com tam graves'},
+                {title: 'et sapientes uti potestate movere midichlorians creare animam'},
+                {title: 'Et talis cognitio IIT se custodiunt firmos pensi moreretur'},
+                {title: 'Vim licet appelles tenebris parte iter multis virtutibus aliqui opinantur'},
+                {title: 'Infeliciter, eius discipulo quae non sciebam, et docuit'},
+                {title: 'Irrisorie. Alios salvos fecit, sed ipse'}
+            ]
+        }
+    }
 }
 </script>
 
@@ -251,4 +333,24 @@ export default {
     color: #00A7C7;
     margin-left: 212px;
 }
+
+.btn-carga {
+    width: 252px;
+    height: 48px;
+    text-transform: none;
+    margin: 96px 594px 72px 594px;
+}
+.title-preguntas {
+    font-weight: 700;
+    margin: 72px 0px 48px 0px;
+}
+
+.panel-header {
+    color: #00C4D7;
+    background-color: #FCFCFC;
+    border: 2px solid #00C4D7;
+    margin-bottom: 16px;
+}
+
+
 </style>
