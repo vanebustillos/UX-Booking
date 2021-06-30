@@ -2,7 +2,7 @@
   <v-container class="pa-0 ma-0 footer-container">
     <v-footer absolute padless>
       <v-card flat tile width="100%" class="ink text-center">
-        <v-row justify="center mx-16 my-4">
+        <v-row justify="center" class="mx-16 my-4">
           <v-col class="pa-0" v-for="i in info" :key="i.title">
             <v-card flat tile class="ink">
               <v-card-title
