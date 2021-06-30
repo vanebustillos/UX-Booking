@@ -43,15 +43,12 @@
     <h1 class="primary--text text--darken-2 body-2">This is an about page</h1>
     <h1 class="primary--text text--darken-3 body-2">This is an about page</h1>
     <h1 class="primary--text text--darken-4 caption">Español (BO)</h1>
-    <Footer />
   </div>
 </template>
 <script>
-import Footer from "../components/Footer.vue";
 export default {
   name: "About",
   components: {
-    Footer,
   },
 };
 </script>
