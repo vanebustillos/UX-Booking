@@ -331,7 +331,6 @@
             dense
             outlined
             height="56px"
-            :items="price"
             color="primary darken-2"
             class="ma-2 mt-2 mb-3"
             v-for="(item, i) in 8"
@@ -518,9 +517,6 @@ export default {
 }
 .thing-to-do-container .v-expansion-panels {
   max-width: 1312px;
-}
-.thing-to-do-container .v-expansion-panel {
-  height: 56px;
 }
 .thing-to-do-container .v-divider {
   width: 1248px;
