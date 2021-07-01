@@ -1,0 +1,40 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+  }
+  .v-btn {
+    height: 56px;
+    width: 320px;
+    margin-left: 560px;
+    margin-right: 560px;
+  }
+  .body {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
+  .v-divider {
+    margin-left: 232px !important;
+    margin-right: 232px !important;
+  }
+  .main-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .img1 {
+    background: url("../assets/home1.png");
+    height: 560px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .search {
+    margin-left: 412px;
+    margin-right: 412px;
+  }
+  .map {
+    max-width: 1248px;
+    width: 1248px;
+  }
+  .v-img {
+    max-width: 100%;
+    width: 100%;
+  }

@@ -185,39 +185,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.subtitle {
-  width: 256px;
-  height: 32px;
-}
-.titles {
-  width: 160px;
-  height: 40px;
-}
-.map {
-  width: 608px;
-  height: 608px;
-}
-.img-container {
-  background: url("../assets/beach.jpg") center center;
-  max-width: 100%;
-  width: 100%;
-  height: 504px;
-  opacity: 0.8;
-}
-.hospedaje-container {
-  max-width: 100%;
-  width: 100%;
-}
-.actions-row {
-  height: 76px;
-}
-.custom-row {
-  margin-left: 96px;
-  margin-right: 96px;
-}
-.destiny-row {
-  margin-left: 96px;
-  width: 608px;
-}
-</style>
+<style scoped src="../styles/Lodgement.css"></style>
