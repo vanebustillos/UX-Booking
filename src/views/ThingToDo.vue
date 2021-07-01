@@ -41,6 +41,7 @@
           <v-select
             dense
             outlined
+            label="Categoria Lorem"
             height="56px"
             class="mt-2 mb-3"
             :items="price"
@@ -52,6 +53,18 @@
             dense
             outlined
             height="56px"
+            label="Categoria Ipsum"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
+        </v-col>
+        <v-col cols="auto">
+          <v-select
+            dense
+            outlined
+            height="56px"
+            label="Categoria die"
             class="mt-2 mb-3"
             :items="price"
             color="primary darken-2"
@@ -63,16 +76,7 @@
             outlined
             height="56px"
             class="mt-2 mb-3"
-            :items="price"
-            color="primary darken-2"
-          ></v-select>
-        </v-col>
-        <v-col cols="auto">
-          <v-select
-            dense
-            outlined
-            height="56px"
-            class="mt-2 mb-3"
+            label="Otras Categorias"
             :items="price"
             color="primary darken-2"
           ></v-select>
@@ -81,7 +85,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Recomendados para ti</label
           >
         </v-col>
@@ -93,9 +97,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 mp-0 mx-4"
           v-for="r in recommended"
           :key="r.id"
           :title="r.title"
@@ -110,7 +114,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Popular del momento</label
           >
         </v-col>
@@ -122,9 +126,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 mp-0 mx-4"
           v-for="p in popular"
           :key="p.id"
           :title="p.title"
@@ -139,7 +143,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Cerca tuyo</label
           >
         </v-col>
@@ -151,9 +155,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 mp-0 mx-4"
           v-for="c in close"
           :key="c.id"
           :title="c.title"
@@ -183,6 +187,7 @@
           <v-select
             dense
             outlined
+            label="Categoria Lorem"
             height="56px"
             class="mt-2 mb-3"
             :items="price"
@@ -194,6 +199,18 @@
             dense
             outlined
             height="56px"
+            label="Categoria Ipsum"
+            class="mt-2 mb-3"
+            :items="price"
+            color="primary darken-2"
+          ></v-select>
+        </v-col>
+        <v-col cols="auto">
+          <v-select
+            dense
+            outlined
+            height="56px"
+            label="Categoria die"
             class="mt-2 mb-3"
             :items="price"
             color="primary darken-2"
@@ -205,16 +222,7 @@
             outlined
             height="56px"
             class="mt-2 mb-3"
-            :items="price"
-            color="primary darken-2"
-          ></v-select>
-        </v-col>
-        <v-col cols="auto">
-          <v-select
-            dense
-            outlined
-            height="56px"
-            class="mt-2 mb-3"
+            label="Otras Categorias"
             :items="price"
             color="primary darken-2"
           ></v-select>
@@ -223,7 +231,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Recomendados para ti</label
           >
         </v-col>
@@ -235,9 +243,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 mp-0 mx-4"
           v-for="r in recommended"
           :key="r.id"
           :title="r.title"
@@ -252,7 +260,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Popular del momento</label
           >
         </v-col>
@@ -264,9 +272,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ma-0 ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 mp-0 mx-4"
           v-for="p in popular"
           :key="p.id"
           :title="p.title"
@@ -281,7 +289,7 @@
       <v-row class="ma-0 mb-6">
         <v-col cols="auto" class="mr-auto">
           <label
-            class="pa-0 pl-8 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
+            class="pa-0 pl-5 ml-16 mt-5 subtitle-1 ink--text text--darken-4"
             >Cerca tuyo</label
           >
         </v-col>
@@ -293,9 +301,9 @@
           ></v-col
         >
       </v-row>
-      <v-row class="ml-16 pl-5">
+      <v-row class="ma-0 mx-16 px-4">
         <Information-card
-          class="ma-0 mp-0 mx-3"
+          class="ma-0 pa-0 mx-4"
           v-for="c in close"
           :key="c.id"
           :title="c.title"
@@ -388,7 +396,7 @@ export default {
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
+          location: "Ubicación",
           img: "https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg",
         },
         {
@@ -396,7 +404,7 @@ export default {
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
+          location: "Ubicación",
           img: "https://www.usnews.com/dims4/USNEWS/22c54a0/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F93%2F08%2F63d7674d439ca41b4d9a312f0e9f%2F2-giza-getty.jpg",
         },
         {
@@ -404,7 +412,7 @@ export default {
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
+          location: "Ubicación",
           img: "https://themysteriousworld.com/wp-content/uploads/2014/06/LONDONeye.jpg",
         },
         {
@@ -412,7 +420,7 @@ export default {
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
+          location: "Ubicación",
           img: "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/03/hungary-budapest-parliament-night-river.jpg",
         },
       ],
@@ -422,32 +430,32 @@ export default {
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
-          img: "https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg",
+          location: "Ubicación",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ugkuBlzEUFkBu1jYZBPMD1xJuWfJ17Hj_AsZK3Fa78eBrRBI2g6Hl90m0vXdFfpCz9k&usqp=CAU",
         },
         {
           id: 2,
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
-          img: "https://www.usnews.com/dims4/USNEWS/22c54a0/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F93%2F08%2F63d7674d439ca41b4d9a312f0e9f%2F2-giza-getty.jpg",
+          location: "Ubicación",
+          img: "https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/Cape-Town-Beaches.jpg",
         },
         {
           id: 3,
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
-          img: "https://themysteriousworld.com/wp-content/uploads/2014/06/LONDONeye.jpg",
+          location: "Ubicación",
+          img: "https://i2.wp.com/heraldspot.com/images/news/20210602/1622608422_tahiti1.jpg?ssl=1",
         },
         {
           id: 4,
           title: "Lorem ipsum",
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          location: "Ubicacion",
-          img: "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/03/hungary-budapest-parliament-night-river.jpg",
+          location: "Ubicación",
+          img: "https://media.istockphoto.com/photos/bodrum-turkey-summer-holidays-great-beaches-of-old-town-picture-id1163622485",
         },
       ],
       close: [
@@ -457,7 +465,7 @@ export default {
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
           location: "Ubicacion",
-          img: "https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg",
+          img: "https://misstourist.com/wp-content/uploads/2019/09/things-to-do-in-prague-660x400.jpg",
         },
         {
           id: 2,
@@ -465,7 +473,7 @@ export default {
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
           location: "Ubicacion",
-          img: "https://www.usnews.com/dims4/USNEWS/22c54a0/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F93%2F08%2F63d7674d439ca41b4d9a312f0e9f%2F2-giza-getty.jpg",
+          img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/295849965.jpg?k=43e93afc1b880fb91445d8c8d3b335320680691e9d49977f1a454be7fc501497&o=&hp=1",
         },
         {
           id: 3,
@@ -473,7 +481,7 @@ export default {
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
           location: "Ubicacion",
-          img: "https://themysteriousworld.com/wp-content/uploads/2014/06/LONDONeye.jpg",
+          img: "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/11/02/15411511214752.jpg",
         },
         {
           id: 4,
@@ -481,7 +489,7 @@ export default {
           subtitle:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
           location: "Ubicacion",
-          img: "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/03/hungary-budapest-parliament-night-river.jpg",
+          img: "https://amazingarchitecture.com/storage/366/75228373_image8935.jpg",
         },
       ],
     };
