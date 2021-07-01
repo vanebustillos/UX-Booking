@@ -1,8 +1,8 @@
 <template>
-  <v-container class="main-container">
+  <v-container class="ma-0 pa-0 main-container">
     <v-container class="ma-0 pa-0 img1 justify-center">
-      <v-container class="pt-14 main-container">
-        <home-search-bar class="search" />
+      <v-container class="pt-8 main-container">
+        <home-search-bar class="search mt-0" />
       </v-container>
       <v-container class="mt-8">
         <v-btn
