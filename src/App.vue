@@ -1,17 +1,15 @@
 <template>
   <v-app>
-     <Nav-bar />
+    <Nav-bar />
     <v-main>
       <router-view />
     </v-main>
     <Footer />
   </v-app>
 </template>
-
 <script>
-import NavBar from "./components/NavigationBar.vue"
-import Footer from './components/Footer.vue';
-
+import NavBar from "./components/NavigationBar.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: { NavBar, Footer },
   name: "App",

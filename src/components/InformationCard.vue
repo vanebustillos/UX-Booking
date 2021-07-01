@@ -8,7 +8,15 @@
       >{{ location }}</v-card-subtitle
     >
     <v-card-title
-      class="pa-0 my-4 mx-8 subtitle-1 ink--text text--darken-4 font-weight-bold"
+      class="
+        pa-0
+        my-4
+        mx-8
+        subtitle-1
+        ink--text
+        text--darken-4
+        font-weight-bold
+      "
       >{{ title }}</v-card-title
     >
     <v-card-text
