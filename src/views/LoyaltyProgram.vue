@@ -222,19 +222,21 @@
     </v-row>
     <v-row class="lprow9 ma-0">
       <v-col class="column">
-        <v-expansion-panels v-model="panel" :readonly="readonly" multiple>
-          <v-expansion-panel v-for="item in preguntas" :key="item.title" class="panel">
-            <v-expansion-panel-header class="panel-header">
-              {{ item.title }}
-              <template v-slot:actions>
-                <v-icon color="primary darken-3"> $expand </v-icon>
-              </template>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              Some content
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
+        <div class="question-container">
+          <v-expansion-panels v-model="panel" :readonly="readonly" multiple>
+            <v-expansion-panel v-for="item in preguntas" :key="item.title" class="panel">
+              <v-expansion-panel-header class="panel-header">
+                {{ item.title }}
+                <template v-slot:actions>
+                  <v-icon color="primary darken-3"> $expand </v-icon>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                Some content
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </div>
       </v-col>
     </v-row>
     <v-row class="lprow10">
