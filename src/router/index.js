@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import LoyaltyPage from "../views/LoyaltyProgram.vue";
 import ThingToDo from "../views/ThingToDo.vue";
+import Hospedaje from "../views/Hospedaje";
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: "/thing-to-do",
     name: "ThingToDo",
     component: ThingToDo,
+  },
+  {
+    path: "/hospedaje",
+    name: "Hospedaje",
+    component: Hospedaje,
   },
 ];
 
