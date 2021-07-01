@@ -84,14 +84,14 @@
         />
       </v-col>
     </v-row>
-    <v-row class="lprow3">
+    <v-row class="lprow3 ma-0">
       <v-col class="column">
         <div class="text-h2 title-exp">Experiencias</div>
       </v-col>
     </v-row>
     <v-row class="lprow4 pa-0 ma-0">
-      <v-col class="column">
-        <div class="text-body-1 experiencia-body mt-12">
+      <v-col class="column" style="">
+        <div class="text-body-1 experiencia-body mt-12" style="margin-left: 96px">
           Disfruta un Viaje Virtual a Sevilla, España y aprende los Códigos de
           Cultura Flamenca en una Clase de Baile con Eva de Triana, una Artista
           Sevillana Experta en Principiantes. 3.530 invitados/principiantes a mi
@@ -99,11 +99,11 @@
           abril 2020.
         </div>
         <br />
-        <div class="text-body-1 experiencia-body">
+        <div class="text-body-1 experiencia-body" style="margin-left: 96px">
           Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook
           y Youtube
         </div>
-        <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+        <v-btn class="text-body-1 btn-conocer-mas mt-1" plain style="margin-left: 308px">
           Conocer Mas
         </v-btn>
       </v-col>
@@ -117,13 +117,13 @@
         />
       </v-col>
     </v-row>
-    <v-row class="lprow5">
+    <v-row class="lprow5 ma-0">
       <v-col class="column">
         <v-img
           class="image2"
           height="456"
           width="612"
-          style="margin: 96px 24px 0px 0px"
+          style="margin: 96px 24px 0px 96px"
           src="https://www.nationalgeographic.com/content/dam/expeditions/destinations/polar/ocean/Journey-to-Antarctica/journey-antarctica-og.ngsversion.1545337658456.adapt.1900.1.jpg"
         />
       </v-col>
@@ -140,12 +140,12 @@
           Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook
           y Youtube
         </div>
-        <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+        <v-btn class="text-body-1 btn-conocer-mas mt-1" style="margin-left: 210px" plain>
           Conocer Mas
         </v-btn>
       </v-col>
       <v-col class="column">
-        <div class="text-body-1 experiencia-body" style="margin-top: 96px">
+        <div class="text-body-1 experiencia-body" style="margin: 96px 0px 0px 96px">
           Disfruta un Viaje Virtual a Sevilla, España y aprende los Códigos de
           Cultura Flamenca en una Clase de Baile con Eva de Triana, una Artista
           Sevillana Experta en Principiantes. 3.530 invitados/principiantes a mi
@@ -153,11 +153,11 @@
           abril 2020.
         </div>
         <br />
-        <div class="text-body-1 experiencia-body">
+        <div class="text-body-1 experiencia-body" style="margin-left: 96px">
           Sigue a Eva Izquierdo de Triana @ishowusevilla en Instagram, Facebook
           y Youtube
         </div>
-        <v-btn class="text-body-1 btn-conocer-mas mt-1" plain>
+        <v-btn class="text-body-1 btn-conocer-mas mt-1" plain style="margin-left: 308px">
           Conocer Mas
         </v-btn>
       </v-col>
@@ -174,15 +174,15 @@
     <v-row>
       <v-btn class="btn-carga primary darken-4"> Carga mas </v-btn>
     </v-row>
-    <v-row class="lprow6">
+    <v-row class="lprow6 ma-0">
       <v-col class="column">
-        <div class="text-body-2" style="margin-bottom: 64px">
+        <div class="text-body-2" style="margin: 0px 0px 64px 96px">
           Vive tus propias experiencias
         </div>
       </v-col>
     </v-row>
-    <v-row class="lprow7">
-      <v-col class="column">
+    <v-row class="lprow7 ma-0">
+      <v-col class="column" style="margin-left: 96px">
         <information-card
           title="Maison Fiori"
           location="A 0,5 km del centro"
@@ -215,15 +215,15 @@
         />
       </v-col>
     </v-row>
-    <v-row class="lprow8">
+    <v-row class="lprow8 ma-0">
       <v-col class="column">
         <div class="text-h2 title-preguntas">Preguntas Frecuentes</div>
       </v-col>
     </v-row>
-    <v-row class="lprow9">
+    <v-row class="lprow9 ma-0">
       <v-col class="column">
         <v-expansion-panels v-model="panel" :readonly="readonly" multiple>
-          <v-expansion-panel v-for="item in preguntas" :key="item.title">
+          <v-expansion-panel v-for="item in preguntas" :key="item.title" class="panel">
             <v-expansion-panel-header class="panel-header">
               {{ item.title }}
               <template v-slot:actions>
@@ -289,6 +289,7 @@ export default {
 <style scoped>
 .lp-content {
   min-width: 1440px;
+  padding: 0%;
 }
 
 .column {
@@ -384,7 +385,6 @@ export default {
 .btn-conocer-mas {
   text-transform: none;
   color: #00a7c7;
-  margin-left: 212px;
 }
 
 .btn-carga {
@@ -395,7 +395,7 @@ export default {
 }
 .title-preguntas {
   font-weight: 700;
-  margin: 72px 0px 48px 0px;
+  margin: 72px 0px 48px 96px;
 }
 
 .panel-header {
@@ -403,5 +403,6 @@ export default {
   background-color: #fcfcfc;
   border: 2px solid #00c4d7;
   margin-bottom: 16px;
+  margin-right: 96px;
 }
 </style>
