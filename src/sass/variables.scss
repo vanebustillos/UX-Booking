@@ -41,8 +41,7 @@ $btn-sizes: (
 
 //Border-radius
 $rounded: (
-  'sm': 6px,
-  'md': 12px,
+  'sm': 8px,
   'lg': 50px
 );
 
@@ -56,5 +55,9 @@ $input-max-height: 32px;
 //Expansiong panel
 $expansion-panel-border-radius: 10px;
 
+//Divider
+$divider-inset-margin-left: 232px;
+$divider-inset-margin-right: 232px;
+$divider-inset-max-height: 2px;
 
 @import '~vuetify/src/styles/styles.sass';
