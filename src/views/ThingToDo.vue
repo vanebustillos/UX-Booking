@@ -334,24 +334,16 @@
         >Preguntas Frecuentes</v-card-title
       >
       <div class="pa-0 my-5 mx-16 px-8 questions" max-width="1440">
-        <v-expansion-panels>
-          <v-expansion-panel
-            dense
-            outlined
-            height="56px"
-            color="primary darken-2"
-            class="ma-2 mt-2 mb-3"
-            v-for="(item, i) in 8"
-            :key="i"
-          >
-            <v-expansion-panel-header>
-              Nonne audire tibi semper in extrema tardantur condicione
+        <v-expansion-panels v-model="panel" :readonly="readonly" multiple>
+          <v-expansion-panel v-for="item in questions" :key="item.title">
+            <v-expansion-panel-header class="panel-header">
+              {{ item.title }}
+              <template v-slot:actions>
+                <v-icon color="primary darken-3"> $expand </v-icon>
+              </template>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Some content
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -492,46 +484,29 @@ export default {
           img: "https://amazingarchitecture.com/storage/366/75228373_image8935.jpg",
         },
       ],
+      questions: [
+        { title: "Nonne audire tibi semper in extrema tardantur condicione" },
+        {
+          title:
+            "Plagueis Sapientium Nec cogitavi. Est fabulam Jedi ut non dicam tibi.",
+        },
+        {
+          title: "Suussa legend Plagueis erat Tenebrosi Domini com tam graves",
+        },
+        {
+          title:
+            "et sapientes uti potestate movere midichlorians creare animam",
+        },
+        { title: "Et talis cognitio IIT se custodiunt firmos pensi moreretur" },
+        {
+          title:
+            "Vim licet appelles tenebris parte iter multis virtutibus aliqui opinantur",
+        },
+        { title: "Infeliciter, eius discipulo quae non sciebam, et docuit" },
+        { title: "Irrisorie. Alios salvos fecit, sed ipse" },
+      ],
     };
   },
 };
 </script>
-<style>
-.thing-to-do-container {
-  max-width: 100%;
-  width: 100%;
-}
-.thing-to-do-container .row {
-  width: 100% !important;
-}
-.thing-to-do-container .v-select {
-  width: 294px;
-  height: 56px;
-}
-
-.background {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../assets/images/background1.png");
-  width: 100%;
-  height: 728px;
-  max-width: 100%;
-}
-.questions {
-  width: 1312px;
-  margin-bottom: 0px;
-}
-.thing-to-do-container .v-expansion-panels {
-  max-width: 1312px;
-}
-.thing-to-do-container .v-divider {
-  width: 1248px;
-  max-width: 1248px;
-}
-
-.footer {
-  margin-bottom: 240px;
-}
-</style>
+<style src="../styles/ThingToDo.css"></style>

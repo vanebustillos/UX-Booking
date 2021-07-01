@@ -59,10 +59,13 @@
       </v-col>
     </v-row>
     <v-row class="custom-row d-flex flex-column pa-0 my-0">
-      <label class="titles display-3 ink--text text--darken-4 font-weight-bold my-3"
+      <label
+        class="titles display-3 ink--text text--darken-4 font-weight-bold my-3"
         >Alojamientos</label
       >
-      <label class="subtitle body-2 ink--text text--darken-4 mt-3">Populares</label>
+      <label class="subtitle body-2 ink--text text--darken-4 mt-3"
+        >Populares</label
+      >
     </v-row>
     <v-row class="custom-row d-flex justify-space-between pa-0 my-0">
       <v-col lg="3" class="pa-0">
@@ -92,7 +95,9 @@
       </v-col>
     </v-row>
     <v-row class="custom-row d-flex flex-column pa-0 my-0">
-      <label class="subtitle body-2 ink--text text--darken-4">Cerca a tu destino</label>
+      <label class="subtitle body-2 ink--text text--darken-4"
+        >Cerca a tu destino</label
+      >
     </v-row>
     <v-row class="destiny-row d-flex justify-space-between pa-0 my-0">
       <information-card
@@ -107,10 +112,21 @@
     </v-row>
     <v-container class="img-container ma-0 pa-0">
       <v-row class="custom-row d-flex flex-column pa-0 my-0">
-        <label class="titles display-3 ink--text text--darken-4 font-weight-bold mt-6 mb-3"
+        <label
+          class="
+            titles
+            display-3
+            ink--text
+            text--darken-4
+            font-weight-bold
+            mt-6
+            mb-3
+          "
           >Ofertas</label
         >
-        <label class="subtitle body-2 ink--text text--darken-4 my-3">Mejores puntuados</label>
+        <label class="subtitle body-2 ink--text text--darken-4 my-3"
+          >Mejores puntuados</label
+        >
       </v-row>
       <v-row class="custom-row d-flex justify-space-between pa-0 my-0">
         <small-card
@@ -125,7 +141,9 @@
         </small-card>
       </v-row>
       <v-row class="custom-row d-flex flex-column pa-0 my-0">
-        <label class="subtitle body-2 ink--text text--darken-4 my-3">Mejores precios</label>
+        <label class="subtitle body-2 ink--text text--darken-4 my-3"
+          >Mejores precios</label
+        >
       </v-row>
       <v-row class="custom-row d-flex justify-space-between pa-0 my-0">
         <small-card
@@ -185,39 +203,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.subtitle {
-  width: 256px;
-  height: 32px;
-}
-.titles {
-  width: 160px;
-  height: 40px;
-}
-.map {
-  width: 608px;
-  height: 608px;
-}
-.img-container {
-  background: url("../assets/beach.jpg") center center;
-  max-width: 100%;
-  width: 100%;
-  height: 504px;
-  opacity: 0.8;
-}
-.hospedaje-container {
-  max-width: 100%;
-  width: 100%;
-}
-.actions-row {
-  height: 76px;
-}
-.custom-row {
-  margin-left: 96px;
-  margin-right: 96px;
-}
-.destiny-row {
-  margin-left: 96px;
-  width: 608px;
-}
-</style>
+<style scoped src="../styles/Lodgement.css"></style>
