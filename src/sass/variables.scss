@@ -1,0 +1,63 @@
+//Typography
+$body-font-family: 'Montserrat';
+$heading-font-family: 'Montserrat';
+$headings: (
+  'h1': (
+    'size': 48px,
+    'line-height': 56px
+  ),
+  'h2': (
+    'size': 32px,
+    'line-height': 40px
+  ),
+  'subtitle-1': (
+    'size': 28px,
+    'line-height': 36px
+  ),
+  'body-1': (
+    'size': 28px,
+    'line-height': 36px
+  ),
+  'body-2': (
+    'size': 24px,
+    'line-height': 32px
+  ),
+  'caption': (
+    'size': 16px,
+    'line-height': 24px
+  ),
+
+);
+
+//Buttons
+$btn-letter-spacing: 0;
+$btn-font-weight: 18;
+$btn-border-radius: 12px;
+$btn-sizes: (
+  'default': 32,
+  'large': 56,
+  'small': 32
+);
+
+//Border-radius
+$rounded: (
+  'sm': 8px,
+  'lg': 50px
+);
+
+//Inputs
+$input-font-size: 16px;
+$input-letter-spacing: 0;
+$input-text-align: left;
+$input-max-height: 32px;
+
+
+//Expansiong panel
+$expansion-panel-border-radius: 10px;
+
+//Divider
+$divider-inset-margin-left: 232px;
+$divider-inset-margin-right: 232px;
+$divider-inset-max-height: 2px;
+
+@import '~vuetify/src/styles/styles.sass';

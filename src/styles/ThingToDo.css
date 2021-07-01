@@ -1,0 +1,39 @@
+.thing-to-do-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .thing-to-do-container .row {
+    width: 100% !important;
+  }
+  .thing-to-do-container .v-select {
+    width: 294px;
+    height: 56px;
+  }
+  
+  .background {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../assets/images/background1.png");
+    width: 100%;
+    height: 728px;
+    max-width: 100%;
+  }
+  .questions {
+    width: 1312px;
+    margin-bottom: 0px;
+  }
+  .thing-to-do-container .v-expansion-panels {
+    max-width: 1312px;
+  }
+  .thing-to-do-container .v-divider {
+    width: 1248px;
+    max-width: 1248px;
+  }
+  .panel-header {
+    color: #00c4d7;
+    background-color: #fcfcfc;
+    border: 2px solid #00c4d7;
+    margin-bottom: 16px;
+  }
