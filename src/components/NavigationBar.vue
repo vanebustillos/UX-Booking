@@ -8,11 +8,13 @@
         height="160"
     >
     
-        <v-container class="toolbar-content">
+        <v-container class="toolbar-content" style="max-width: 0px">
             <v-row class="rows">
                 <v-col class="column" cols="auto">
                     <div class="text-subtitle-1 title">
-                        <span class="nav-title">HOTELES.COM</span>
+                        <span class="nav-title">
+                            <router-link to="/" tag="span" style="cursor: pointer"> HOTELES.COM </router-link>
+                        </span>
                     </div>
                 </v-col>
                 <v-col class="column" cols="auto">
@@ -24,14 +26,14 @@
                 </v-col>
                 <v-col class="column" cols="auto">
                     <div>
-                        <v-btn class="text-subtitle-1 button" plain>
+                        <v-btn class="text-subtitle-1 button" plain router to="/Hospedaje">
                              <span class="btn-text">Hospedaje</span>
                         </v-btn>
                     </div>
                 </v-col>
                 <v-col class="column" cols="auto">
                     <div>
-                        <v-btn class="text-subtitle-1 button" plain>
+                        <v-btn class="text-subtitle-1 button" plain router to="/ProgramaDeFidelidad">
                              <span class="btn-text">Programa Fidelidad</span>
                         </v-btn>
                     </div>
@@ -68,6 +70,11 @@ export default {
         { title: "Programa Fidelidad" },
       ],
     };
+  },
+  methods: {
+    clickMethod() {
+      this.$router.push('/');
+    },
   },
 };
 </script>
