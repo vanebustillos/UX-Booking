@@ -4,42 +4,42 @@
             "id": 1,
             "title": "Maison Fiori",
             "subtitle": "A 0,5 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://c.otcdn.com/imglib/hotelfotos/8/552/hotel-moraine-cochabamba-000.jpg",
             "stars": 3
         },
         {
             "id": 2,
             "title": "Cesar's Plaza",
             "subtitle": "A 0,2 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vfpxlzsV2l3S-KeEwttOwl-v12jhCX2ReA&usqp=CAU",
             "stars": 4
         },
         {
             "id": 3,
             "title": "Hotel Regina",
             "subtitle": "A 10,2 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/165081544.jpg?k=d67cac455422bed743a60ec5ea238c06706758dc73c0a1380547b04684ce0531&o=&hp=1",
             "stars": 5
         },
         {
             "id": 4,
             "title": "Gran Hotel",
             "subtitle": "A 1,8 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://defbol.com/uploads/adm_hoteles/ht1509401004-1539116942-lg.jpg",
             "stars": 5
         },
         {
             "id": 5,
             "title": "Armenia Hotel",
             "subtitle": "A 0,7 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://exp.cdn-hotels.com/hotels/11000000/10100000/10090200/10090191/85897c7b_z.jpg?impolicy=fcrop&w=500&h=333&q=medium",
             "stars": 3
         },
         {
             "id": 6,
             "title": "Hotel Boutique",
             "subtitle": "A 2 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8d/e2/c6/jardines-del-cerro-hotel.jpg?w=900&h=-1&s=1",
             "stars": 5
         }
     ],
@@ -48,43 +48,43 @@
             "id": 7,
             "title": "Maison Fiori",
             "location": "A 0,5 km del centro",
-            "img": "https://picsum.photos/200",
-            "subtitle": "Situado en Cochabamba, a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."
+            "img": "https://c.otcdn.com/imglib/hotelfotos/8/552/hotel-moraine-cochabamba-000.jpg",
+            "subtitle": "Situado a 1,3 km de la plaza 14 de Septiembre y a 1,5 km de la iglesia de Santo Domingo."
         },
         {
             "id": 8,
             "title": "Cesar's Plaza",
             "location": "A 0,2 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vfpxlzsV2l3S-KeEwttOwl-v12jhCX2ReA&usqp=CAU",
             "subtitle": "Ofrece sesiones de masajes, una sauna, servicios de belleza y peluquería."
         },
         {
             "id": 9,
             "title": "Hotel Regina",
             "location": "A 10,2 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/165081544.jpg?k=d67cac455422bed743a60ec5ea238c06706758dc73c0a1380547b04684ce0531&o=&hp=1",
             "subtitle": "De 5 estrellas, ofrece suites decoradas de forma exclusiva con conexión Wi-Fi gratuita."
         },
         {
             "id": 10,
             "title": "Gran Hotel",
             "location": "A 1,8 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://defbol.com/uploads/adm_hoteles/ht1509401004-1539116942-lg.jpg",
             "subtitle": "Ubicado en la zona céntrica, contamos con todos los protocolos y medidas de bioseguridad."
         },
         {
             "id": 11,
             "title": "Armenia Hotel",
             "location": "A 0,7 km del centro",
-            "img": "https://picsum.photos/200",
+            "img": "https://exp.cdn-hotels.com/hotels/11000000/10100000/10090200/10090191/85897c7b_z.jpg?impolicy=fcrop&w=500&h=333&q=medium",
             "subtitle": "Ofrece alojamiento con salón compartido, aparcamiento privado gratuito y jardín."
         },
         {
             "id": 12,
-            "title": "Hotel Boutique",
+            "title": "Hotel Aranjuez",
             "location": "A 2 km del centro",
-            "img": "https://picsum.photos/200",
-            "subtitle": "Ofrece alojamiento con restaurante, aparcamiento privado, piscina al aire libre y centro de fitness."
+            "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8d/e2/c6/jardines-del-cerro-hotel.jpg?w=900&h=-1&s=1",
+            "subtitle": "Cuenta con restaurante, aparcamiento privado, piscina al aire libre y centro de fitness."
         }
     ]
 }

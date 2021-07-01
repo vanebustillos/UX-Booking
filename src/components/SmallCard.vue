@@ -1,5 +1,5 @@
 <template>
-  <v-card height="104" width="400" tile flat>
+  <v-card height="104" width="400" tile flat color="transparent">
     <div class="d-flex flex-no-wrap">
       <v-avatar size="104" rounded>
         <v-img :src="img"></v-img>

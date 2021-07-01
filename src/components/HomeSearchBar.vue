@@ -68,7 +68,7 @@
   </v-container>
 </template>
 
-<style>
+<style scoped>
   .container {
     width: 616px;
     height: 96px;
