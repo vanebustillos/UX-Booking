@@ -20,7 +20,12 @@
         </v-col>
         <v-col class="column" cols="auto">
           <div>
-            <v-btn class="text-subtitle-1 button" plain  router to="/thing-to-do">
+            <v-btn
+              class="text-subtitle-1 button"
+              plain
+              router
+              to="/thing-to-do"
+            >
               <span class="btn-text">Cosas que hacer</span>
             </v-btn>
           </div>

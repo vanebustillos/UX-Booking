@@ -5,12 +5,25 @@
         <v-img :src="img"></v-img>
       </v-avatar>
       <div id="text-container">
-        <v-card-title class="pa-0 mt-2 mb-1 mx-6 subtitle-1 ink--text text--darken-4 font-weight-bold">
+        <v-card-title
+          class="
+            pa-0
+            mt-2
+            mb-1
+            mx-6
+            subtitle-1
+            ink--text
+            text--darken-4
+            font-weight-bold
+          "
+        >
           {{ title }}</v-card-title
         >
-        <v-card-subtitle class="pa-0 mt-1 mx-6 ink--text text--darken-4 caption" :value="subtitle">{{
-          subtitle
-        }}</v-card-subtitle>
+        <v-card-subtitle
+          class="pa-0 mt-1 mx-6 ink--text text--darken-4 caption"
+          :value="subtitle"
+          >{{ subtitle }}</v-card-subtitle
+        >
         <v-rating
           class="mx-16 mb-0 text-center"
           color="primary darken-2"

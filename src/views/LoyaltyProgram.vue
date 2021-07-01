@@ -250,7 +250,7 @@ import SmallCard from "../components/SmallCard.vue";
 import InformationCard from "../components/InformationCard.vue";
 //import Footer from "..//components/Footer.vue"
 
-export default { 
+export default {
   name: "LoyaltyProgram",
   components: {
     SmallCard,
