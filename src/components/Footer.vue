@@ -2,7 +2,7 @@
   <v-container class="pa-0 ma-0 footer-container">
     <v-footer absolute padless class="ink text-center justify-center">
       <v-card flat tile width="1440" class="ink text-center">
-        <v-row justify="center" class="mx-16 my-4">
+        <v-row justify="center" class="mx-16 px-5 my-4">
           <v-col class="pa-0" v-for="i in info" :key="i.title">
             <v-card flat tile class="ink">
               <v-card-title
@@ -23,17 +23,18 @@
                   text--lighten-5
                   px-3
                   py-0
-                  justify-center
+                  caption
+                  text-sm-left
                 "
                 >{{ i.content }}</v-card-text
               ></v-card
             >
           </v-col>
         </v-row>
-        <v-divider class="primary darken-3 mx-16"></v-divider>
-        <v-row class="my-4">
-          <v-col cols="auto" class="mr-auto py-0">
-            <label class="ml-16 primary--text text--lighten-5">2021 </label>
+        <v-divider class="primary darken-3 mx-16 px-8"></v-divider>
+        <v-row class="my-4 mx-16 px-8">
+          <v-col cols="auto" class="pa-0 mr-auto">
+            <label class="primary--text text--lighten-5">2021 </label>
             <label class="mx-1 primary--text text--lighten-5"
               >Hoteles.com
             </label>
@@ -41,7 +42,7 @@
               >Privacidad Términos de uso
             </label>
           </v-col>
-          <v-col cols="auto" class="mr-16 py-0">
+          <v-col cols="auto" class="pa-0">
             <v-icon class="primary--text text--lighten-5 mx-1" size="24px">
               mdi-web
             </v-icon>
@@ -104,6 +105,5 @@ export default {
 }
 .text-information {
   height: 88px;
-  width: 294px;
 }
 </style>
