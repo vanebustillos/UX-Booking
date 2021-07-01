@@ -22,6 +22,28 @@
       </v-container>
     </v-container>
     <v-divider class="primary darken-3" :inset="true"/>
+    <v-container class="py-10 px-0 ma-0">
+      <label class="body text-h2 font-weight-bold">
+        Hospedaje
+      </label>
+      <v-container class="ma-0 pa-0">
+        <v-row class="ma-0 mx-16 px-4 my-10 body d-flex">
+          <information-card class="ma-0 pa-0 mx-4" v-for="i in hospedajeImgs" :key="i" :title=title :subtitle=subtitle :location=location :img=i />
+        </v-row>
+      </v-container>
+    </v-container>
+    <v-divider class="primary darken-3" :inset="true"/>
+    <v-container class="py-10 px-0 ma-0">
+      <label class="body text-h2 font-weight-bold">
+        Transporte
+      </label>
+      <v-container class="main-container pa-0">
+        <v-row class="ma-0 mx-16 px-4 my-10 body d-flex">
+          <information-card class="ma-0 pa-0 mx-4" v-for="i in transportImgs" :key="i" :title=title :subtitle=subtitle :location=location :img=i />
+        </v-row>
+      </v-container>
+    </v-container>
+    
   </v-container>
 </template>
 
