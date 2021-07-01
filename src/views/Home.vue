@@ -43,7 +43,13 @@
         </v-row>
       </v-container>
     </v-container>
-    
+    <v-divider class="primary darken-3" :inset="true"/>
+     <v-container class="my-10 body">
+        <label class="text-h2 font-weight-bold">
+        Explorar
+      </label>
+      <v-img class="my-10 main-container" src="../assets/maphome.png"></v-img>
+    </v-container>
   </v-container>
 </template>
 
