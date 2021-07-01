@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import LoyaltyPage from "../views/LoyaltyProgram.vue";
 import ThingToDo from "../views/ThingToDo.vue";
-import Hospedaje from "../views/Hospedaje";
+import Hospedaje from "../views/Lodgement.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/LoyaltyProgram",
+    path: "/loyaltyProgram",
     name: "LoyaltyPage",
     component: LoyaltyPage,
   },
@@ -23,8 +23,8 @@ const routes = [
     component: ThingToDo,
   },
   {
-    path: "/hospedaje",
-    name: "Hospedaje",
+    path: "/lodgement",
+    name: "Lodgement",
     component: Hospedaje,
   },
 ];

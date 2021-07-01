@@ -149,7 +149,7 @@ import data from "../../store/data.json";
 import HospedajeSearchBar from "../components/HospedajeSearchBar.vue";
 
 export default {
-  name: "hospedaje",
+  name: "Lodgement",
 
   components: {
     InformationCard,
