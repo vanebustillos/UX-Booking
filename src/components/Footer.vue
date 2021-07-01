@@ -1,16 +1,30 @@
 <template>
   <v-container class="pa-0 ma-0 footer-container">
-    <v-footer absolute padless>
-      <v-card flat tile width="100%" class="ink text-center">
+    <v-footer absolute padless class="ink text-center justify-center">
+      <v-card flat tile width="1440" class="ink text-center">
         <v-row justify="center" class="mx-16 my-4">
           <v-col class="pa-0" v-for="i in info" :key="i.title">
             <v-card flat tile class="ink">
               <v-card-title
-                class="px-3 pt-0 py-3 primary--text text--lighten-5 justify-center"
+                class="
+                  px-3
+                  pt-0
+                  py-3
+                  primary--text
+                  text--lighten-5
+                  justify-center
+                "
                 >{{ i.title }}</v-card-title
               >
               <v-card-text
-                class="text-information primary--text text--lighten-5 px-3  py-0 justify-center"
+                class="
+                  text-information
+                  primary--text
+                  text--lighten-5
+                  px-3
+                  py-0
+                  justify-center
+                "
                 >{{ i.content }}</v-card-text
               ></v-card
             >
