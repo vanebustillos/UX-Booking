@@ -1,13 +1,13 @@
 <template>
-  <v-container class="primary lighten-5 rounded-lg py-4">
-    <v-row>
-      <v-col class="ml-6" cols="auto" sm="3"> 
+  <v-container class="primary lighten-5 rounded-lg py-0 my-4">
+    <v-row class="ma-0 pa-0">
+      <v-col class="ml-6 mr-4">
         <v-text-field class="ink--text text--darken-4 caption"
             label="Ubicacion"
             prepend-icon="mdi-map-marker"
         ></v-text-field>
       </v-col>
-      <v-col cols="auto" sm="3">
+      <v-col class="mx-4"> 
         <v-menu
           v-model="dateMenu"
           :close-on-content-click="false"
@@ -31,7 +31,7 @@
           <v-date-picker locale="en-in" v-model="arrival" no-title @input="dateMenu = false"></v-date-picker>
         </v-menu>
       </v-col>
-     <v-col cols="auto" sm="3">
+      <v-col class="mx-4">
         <v-menu
           v-model="dateMenu2"
           :close-on-content-click="false"
@@ -54,7 +54,7 @@
           <v-date-picker locale="en-in" v-model="departure" no-title @input="dateMenu2 = false"></v-date-picker>
         </v-menu>
       </v-col>
-      <v-col class="pl-8 pr-6 mr-0" cols="auto">
+      <v-col class="ml-4 mr-6 px-0 py-0 my-4" cols="auto">
         <v-btn class="primary darken-2 white--text"
           fab
           large
