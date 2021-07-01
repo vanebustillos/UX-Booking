@@ -1,6 +1,6 @@
 <template>
   <v-container class="main-container">
-    <v-container class="ma-0 pa-0 img1">
+    <v-container class="ma-0 pa-0 img1 justify-center">
       <v-container class="pt-14 main-container">
         <home-search-bar class="search" />
       </v-container>
@@ -11,44 +11,44 @@
         </v-btn>
       </v-container>
     </v-container>
-    <v-container class="main-container my-10 px-0 ma-0">
+    <v-container class="main-container my-10 px-0">
       <label class="text-h2 font-weight-bold body">
         Explora cerca de ti
       </label>
-      <v-container class="main-container pa-0">
+      <v-container class="main-container pa-0 mt-10">
         <v-row class="body d-flex justify-space-between mt-10 mb-5" v-for="i in 2" :key="i">
           <small-card v-for="i in 3" :key="i" :title=title :subtitle=subtitle :stars=4 :img=smallImg />
         </v-row>
       </v-container>
     </v-container>
     <v-divider class="primary darken-3" :inset="true"/>
-    <v-container class="py-10 px-0 ma-0">
+    <v-container class="main-container px-0 my-10">
       <label class="body text-h2 font-weight-bold">
         Hospedaje
       </label>
-      <v-container class="ma-0 pa-0">
+      <v-container class="main-container ma-0 pa-0">
         <v-row class="ma-0 mx-16 px-4 my-10 body d-flex">
           <information-card class="ma-0 pa-0 mx-4" v-for="i in hospedajeImgs" :key="i" :title=title :subtitle=subtitle :location=location :img=i />
         </v-row>
       </v-container>
     </v-container>
     <v-divider class="primary darken-3" :inset="true"/>
-    <v-container class="py-10 px-0 ma-0">
+    <v-container class="main-container px-0 ma-0 my-10">
       <label class="body text-h2 font-weight-bold">
         Transporte
       </label>
-      <v-container class="main-container pa-0">
+      <v-container class="main-container ma-0 pa-0">
         <v-row class="ma-0 mx-16 px-4 my-10 body d-flex">
           <information-card class="ma-0 pa-0 mx-4" v-for="i in transportImgs" :key="i" :title=title :subtitle=subtitle :location=location :img=i />
         </v-row>
       </v-container>
     </v-container>
     <v-divider class="primary darken-3" :inset="true"/>
-     <v-container class="my-10 body">
+    <v-container class="map body my-10 px-0">
         <label class="text-h2 font-weight-bold">
-        Explorar
-      </label>
-      <v-img class="my-10 main-container" src="../assets/maphome.png"></v-img>
+          Explorar
+        </label>
+        <v-img class="my-10 mx-0" src="../assets/maphome.png"></v-img>
     </v-container>
   </v-container>
 </template>
@@ -82,16 +82,19 @@
     max-width: 100%;
     width: 100%;
   }
-  .v-img {
-    max-width: 100%;
-    width: 100%;
-    height: 480px;
-  }
   .search {
     margin-left: 412px;
     margin-right: 412px;
   }
- 
+  .map {
+    max-width: 1248px;
+    width: 1248px;
+  }
+  .v-img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
 </style>
 
 <script>
